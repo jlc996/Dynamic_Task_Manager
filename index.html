@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Task Manager</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-400 flex justify-center items-center min-h-screen">
+  
+  <section class="bg-gray-300 p-6 rounded-xl shadow-md w-full">
+    
+    <h1 class="text-2xl font-bold mb-4 text-center">Dynamic Task Manager</h1>
+
+    <div class="bg-white p-6 rounded-xl shadow-md w-full">
+
+      <!-- Add Task -->
+      <div class="mb-3">
+        <input id="taskInput" type="text" placeholder="Enter task..." class="border p-2 w-full rounded mb-2">
+        <button id="addButton"
+          class="bg-blue-500 text-white px-4 py-2 rounded shadow hover:bg-blue-600 transition w-full">Add Task</button>
+      </div>
+
+      <!-- Delete Specific Task -->
+      <div class="mb-3">
+        <input id="deleteInput" type="text" placeholder="Task to delete..." class="border p-2 w-full rounded mb-2">
+        <button id="deleteButton"
+          class="bg-red-500 text-white px-4 py-2 rounded shadow hover:bg-red-600 transition w-full">Delete Task</button>
+      </div>
+
+      <!-- Clear All -->
+      <div>
+        <button id="clearButton"
+          class="bg-gray-700 text-white px-4 py-2 rounded shadow hover:bg-gray-800 transition w-full">Clear All</button>
+      </div>
+
+    </div>
+
+    <h2 class="text-center font-semibold mb-2">Tasks</h2>
+
+    <div class="bg-white p-6 rounded-xl shadow-md w-full">
+      <!-- Task List -->
+      <ol id="taskList" class="space-y-2"></ol>
+    </div>
+
+  </section>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
