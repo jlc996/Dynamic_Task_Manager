@@ -5,6 +5,7 @@ let myTasks = [];
 const inputField = document.getElementById("taskInput");
 const addButton = document.getElementById("addButton");
 const deleteInput = document.getElementById("deleteInput");
+const deleteButton = document.getElementById("deleteButton");
 const clearButton = document.getElementById("clearButton");
 const taskList = document.getElementById("taskList");
 
